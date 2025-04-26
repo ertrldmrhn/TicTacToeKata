@@ -24,7 +24,11 @@
 	}
 
 	public void takeField(int index){
+		if (board[index] == null) {
 		board[index] = "X";
+	} else {
+		throw new IllegalStateException("Field already taken");
+	}
 	}
 
 	public String getField(int index){
