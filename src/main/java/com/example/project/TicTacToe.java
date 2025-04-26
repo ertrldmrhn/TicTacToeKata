@@ -14,7 +14,12 @@
  public class TicTacToe {
 	private final String[] board = new String[9];
 	public int availableFieldsCount() {
-		int count = 9;
+		int count = 0;
+        for (String field : board) {
+            if (field == null) {
+                count++;
+            }
+        }
 		return count;
 	}
 }

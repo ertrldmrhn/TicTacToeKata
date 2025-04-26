@@ -19,7 +19,6 @@
  
  class TicTactToeTests {
 	
-	@Disabled
 	@Test
 	void gameStartsWithNineFields() {
 		TicTacToe game = new TicTacToe();
