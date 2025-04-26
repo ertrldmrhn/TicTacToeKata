@@ -23,12 +23,16 @@
 		return count;
 	}
 
-	public void takeField(int index){
-		if (board[index] == null) {
-		board[index] = "X";
-	} else {
-		throw new IllegalStateException("Field already taken");
+	private boolean isFieldAvailable(int index) {
+		return board[index] == null;
 	}
+
+	public void takeField(int index){
+		if (isFieldAvailable(index)) {
+			board[index] = "X";
+		} else {
+			throw new IllegalStateException("Field already taken");
+		}
 	}
 
 	public String getField(int index){

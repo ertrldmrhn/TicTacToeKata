@@ -36,7 +36,6 @@ class TicTacToeTests {
 		assertEquals("X", game.getField(0));
 	};
 	
-	@Disabled
 	@Test 
 	void playerCannotTakeAlreadyTakenField(){
 		TicTacToe game = new TicTacToe();
