@@ -22,6 +22,15 @@
         }
 		return count;
 	}
+
+	public void takeField(int index){
+		board[0] = "X";
+	}
+
+	public String getField(int index){
+		return board[index];
+	}
 }
  
+
  

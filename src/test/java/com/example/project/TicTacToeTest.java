@@ -30,7 +30,7 @@ import org.junit.jupiter.api.DisplayName;
 	@Test
 	void playerCanTakeAvailableField(){
 		TicTacToe game = new TicTacToe();
-		game.TakeField(0);
+		game.takeField(0);
 		assertEquals("X", game.getField(0));
 	};
 
