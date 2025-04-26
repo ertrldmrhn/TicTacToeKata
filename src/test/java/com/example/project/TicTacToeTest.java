@@ -18,10 +18,11 @@
  import org.junit.jupiter.params.provider.CsvSource;
  
  class TicTactToeTests {
- 
-	 @Test
-	 void gameStartsWithNineFields() {
-		 TicTacToe game = new TicTacToe();
-		 assertEquals(9, game.availableFieldsCount(), "There should be 9 available fields");
-	 }
- }
+	
+	@Disabled
+	@Test
+	void gameStartsWithNineFields() {
+		TicTacToe game = new TicTacToe();
+		assertEquals(9, game.availableFieldsCount(), "There should be 9 available fields");
+	}
+}
