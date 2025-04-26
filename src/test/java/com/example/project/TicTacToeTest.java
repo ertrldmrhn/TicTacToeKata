@@ -28,7 +28,6 @@ class TicTacToeTests {
 		assertEquals(9, game.availableFieldsCount(), "There should be 9 available fields");
 	}
 
-	@Disabled
 	@Test
 	void playerCanTakeAvailableField(){
 		TicTacToe game = new TicTacToe();

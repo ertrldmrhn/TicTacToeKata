@@ -24,7 +24,7 @@
 	}
 
 	public void takeField(int index){
-		board[0] = "X";
+		board[index] = "X";
 	}
 
 	public String getField(int index){
