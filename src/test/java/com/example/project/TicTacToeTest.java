@@ -34,6 +34,14 @@ class TicTacToeTests {
 		game.takeField(0);
 		assertEquals("X", game.getField(0));
 	};
-
+	
+	@Test 
+	void playerCannotTakeAlreadyTakenField(){
+		TicTacToe game = new TicTacToe();
+		game.takeField(0);
+		assertThrows(IllegalStateException.class, () -> {
+			game.takeField(0);
+		});
+	}
 	
 }
