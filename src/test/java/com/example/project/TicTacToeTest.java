@@ -11,8 +11,10 @@
  package com.example.project;
 
  import static org.junit.jupiter.api.Assertions.assertEquals;
- 
- import org.junit.jupiter.api.DisplayName;
+
+import java.beans.Transient;
+
+import org.junit.jupiter.api.DisplayName;
  import org.junit.jupiter.api.Test;
  import org.junit.jupiter.params.ParameterizedTest;
  import org.junit.jupiter.params.provider.CsvSource;
@@ -24,4 +26,13 @@
 		TicTacToe game = new TicTacToe();
 		assertEquals(9, game.availableFieldsCount(), "There should be 9 available fields");
 	}
+
+	@Test
+	void playerCanTakeAvailableField(){
+		TicTacToe game = new TicTacToe();
+		game.TakeField(0);
+		assertEquals("X", game.getField(0));
+	};
+
+	
 }
